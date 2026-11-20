@@ -775,6 +775,13 @@ function renderHub(topicId) {
           <div class="mode-desc">Форма → оси → движения с анимацией: ${AXJ.filter(j => j.tp === topicId).map(j => j.ru.split(' (')[0].toLowerCase()).join(', ')}</div>
         </div>
       </div>` : ''}
+      ${isMuscleTopic(topicId) && maHasTopic(topicId) ? `<div class="mode-card glossary-card" onclick='MA=null; APP.goToJSON(${JSON.stringify(JSON.stringify({screen:'maSetup', topicId}))})'>
+        <div class="mode-emoji">💪</div>
+        <div class="mode-body">
+          <div class="mode-title">Мышцы в действии <span class="new-badge">новое</span></div>
+          <div class="mode-desc">Кто делает движение · что выпадет при повреждении нерва · мышца по описанию</div>
+        </div>
+      </div>` : ''}
       ${scenarioOf(topicId) ? `<div class="mode-card glossary-card" onclick='SCN=null; APP.goToJSON(${JSON.stringify(JSON.stringify({screen:'scenario', topicId}))})'>
         <div class="mode-emoji">🗣️</div>
         <div class="mode-body">
@@ -1738,6 +1745,8 @@ function render() {
   if (VIEW.screen === 'examSetup') return renderExamSetup();
   if (VIEW.screen === 'baseList') return renderBaseList();
   if (VIEW.screen === 'difficulty') return renderDifficulty(VIEW.mode, VIEW.topicId);
+  if (VIEW.screen === 'maSetup') { MA_TOPIC = VIEW.topicId || MA_TOPIC; return renderMaSetup(); }
+  if (VIEW.screen === 'ma') return renderMa();
   if (VIEW.screen === 'game') return renderGame(VIEW.mode, VIEW.topicId);
 }
 
