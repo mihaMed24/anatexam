@@ -908,3 +908,29 @@
   .th-freq { font-size: 12px; color: var(--muted); margin-left: 6px; }
   .th-solve { grid-column: 1 / -1; justify-self: start; border: 1.5px solid var(--accent); background: var(--card); color: var(--accent-dark); font: inherit; font-size: 13px; font-weight: 700; border-radius: 16px; padding: 5px 12px; cursor: pointer; }
   .th-solve:hover { background: var(--accent-light); }
+
+/* ---------- Мышцы в действии ---------- */
+.ma-prog{height:8px;border-radius:6px;background:var(--paper-alt);overflow:hidden;margin:6px 0 10px}.ma-prog div{height:100%;background:var(--accent);transition:width .3s}
+.ma-type{text-align:center}.ma-type span{display:inline-block;background:var(--accent-light);color:var(--accent-dark);font-size:12px;font-weight:700;padding:3px 10px;border-radius:12px}.ma-type small{color:var(--muted);margin-left:6px}
+.ma-q{text-align:center;padding:6px 8px}.ma-q h2{margin:8px 0 2px;font-size:20px;line-height:1.3}.ma-q p{margin:6px 0;color:var(--muted);font-size:14px}
+.ma-desc{margin:10px 0;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--purple);border-radius:var(--radius);line-height:1.55}.ma-desc b{color:var(--purple)}
+.ma-opts{display:grid;gap:8px;margin:12px 0}
+.ma-opt{display:flex;align-items:center;gap:10px;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:11px 12px;cursor:pointer;font-size:15px;width:100%}
+.ma-opt:hover:not(.lock){border-color:var(--accent)}.ma-box{width:20px;height:20px;border:2px solid var(--line);border-radius:5px;flex:none;display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff}
+.ma-opt.sel{border-color:var(--accent);background:var(--accent-light)}.ma-opt.sel .ma-box{background:var(--accent);border-color:var(--accent)}
+.ma-opt.ok{border-color:var(--accent);background:var(--accent-light)}.ma-opt.ok .ma-box{background:var(--accent);border-color:var(--accent)}
+.ma-opt.bad{border-color:var(--red);background:var(--red-light)}.ma-opt.miss{border-color:var(--gold);background:var(--gold-light)}
+.ma-lab small{display:block;color:var(--muted);font-style:italic;font-size:12px}.ma-tag{margin-left:auto;font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;background:#fff;border:1px solid var(--line);white-space:nowrap}
+.ma-fb{margin:12px 0;padding:12px 14px;border-radius:var(--radius);line-height:1.5;font-size:14px}.ma-fb.ok{background:var(--accent-light);border:1px solid #b9d0bd}.ma-fb.bad{background:var(--red-light);border:1px solid #e4bfb5}.ma-fb h3{margin:0 0 4px;font-size:15px}
+.ma-nerve{margin:10px 0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.ma-nh{background:var(--ink);color:var(--paper);padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.04em}
+.ma-nr{display:flex;gap:10px;padding:8px 12px;border-top:1px solid var(--paper-alt);font-size:14px;align-items:baseline}.ma-nh+.ma-nr{border-top:0}
+.ma-nv{background:var(--purple);color:#fff;border-radius:10px;padding:1px 8px;font-size:12px;font-weight:700;white-space:nowrap}
+.ma-mcard{margin:10px 0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.ma-mh{padding:8px 12px;background:var(--paper-alt);display:flex;justify-content:space-between;gap:8px;align-items:center}.ma-mh i{color:var(--muted);font-size:13px}
+.ma-mcard dl{margin:0;padding:6px 12px 6px;display:grid;grid-template-columns:105px 1fr;gap:5px 10px;font-size:13.5px}.ma-mcard dt{color:var(--muted)}.ma-mcard dd{margin:0}
+.ma-go{display:block;width:100%;border:0;border-top:1px solid var(--paper-alt);background:var(--accent-light);color:var(--accent-dark);padding:9px;font-weight:700;cursor:pointer;margin-top:6px}
+.ma-opt.bad .ma-box{background:var(--red);border-color:var(--red)}
+
+/* переключатель карточек в сценарии */
+.scn-cards{display:flex;gap:6px;align-items:center;margin:8px 0;flex-wrap:wrap}
+.scn-cardbtn,.scn-cardarrow{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px;font-weight:700;font-size:13px;cursor:pointer;color:var(--ink)}
+.scn-cardbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}.scn-cardarrow:disabled{opacity:.35;cursor:default}
