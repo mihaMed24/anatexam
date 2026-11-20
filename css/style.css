@@ -929,3 +929,8 @@
 .ma-mcard dl{margin:0;padding:6px 12px 6px;display:grid;grid-template-columns:105px 1fr;gap:5px 10px;font-size:13.5px}.ma-mcard dt{color:var(--muted)}.ma-mcard dd{margin:0}
 .ma-go{display:block;width:100%;border:0;border-top:1px solid var(--paper-alt);background:var(--accent-light);color:var(--accent-dark);padding:9px;font-weight:700;cursor:pointer;margin-top:6px}
 .ma-opt.bad .ma-box{background:var(--red);border-color:var(--red)}
+
+/* переключатель карточек в сценарии */
+.scn-cards{display:flex;gap:6px;align-items:center;margin:8px 0;flex-wrap:wrap}
+.scn-cardbtn,.scn-cardarrow{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px;font-weight:700;font-size:13px;cursor:pointer;color:var(--ink)}
+.scn-cardbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}.scn-cardarrow:disabled{opacity:.35;cursor:default}

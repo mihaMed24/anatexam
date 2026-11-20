@@ -4931,7 +4931,8 @@ function renderScenario(topicId) {
   const topic = findTopic(topicId), sc = scenarioOf(topicId), S = SCN;
   if (S.idx >= sc.steps.length) return renderScenarioResult(topic, sc);
   const st = sc.steps[S.idx], ids = st.h || [];
-  const img = scnImageFor(topic, ids);
+  const cards = scnCardsFor(topic, ids);
+  const img = (S.card && cards.find(c => c.src === S.card)) || scnImageFor(topic, ids);
   let html = renderTopbar();
   html += `<div class="game-topbar">
       <button class="exit-x" onclick='SCN=null; APP.goToJSON(${JSON.stringify(JSON.stringify({ screen: 'scenario', topicId }))})'>✕</button>
@@ -4944,6 +4945,12 @@ function renderScenario(topicId) {
     html += `<div class="scn-btns scn-btns-top"><button class="btn btn-ghost" onclick="scnMark(false)">✕ Забыл</button><button class="btn btn-primary" onclick="scnMark(true)">✓ Сказал</button></div>`;
   } else {
     html += `<div class="scn-btns scn-btns-top"><button class="btn btn-ghost" onclick="scnGo(-1)" ${S.idx ? '' : 'disabled'}>← Шаг</button><button class="btn btn-primary" onclick="scnGo(1)">${S.idx + 1 >= sc.steps.length ? 'Готово ✓' : 'Шаг →'}</button></div>`;
+  }
+  if (cards.length > 1 && img) {
+    const ci = cards.findIndex(c => c.src === img.src);
+    html += `<div class="scn-cards"><button class="scn-cardarrow" onclick="scnCardStep(-1)" ${ci > 0 ? '' : 'disabled'}>‹</button>` +
+      cards.map(c => `<button class="scn-cardbtn${c.src === img.src ? ' on' : ''}" onclick="scnCard('${c.src}')">${scnCardNo(c) ? 'карт. ' + scnCardNo(c) : cardShortLabel(c.label, c.src)}</button>`).join('') +
+      `<button class="scn-cardarrow" onclick="scnCardStep(1)" ${ci < cards.length - 1 ? '' : 'disabled'}>›</button></div>`;
   }
   if (img) {
     const rings = ids.length ? img.hotspots.filter(h => ids.includes(h.term))
@@ -4977,12 +4984,26 @@ function scnLegend(topic, img, ids) {
       ${favTermStar(topic.id, r.term.id, 'cm-info-star')}</div>`).join('') +
     `<div class="tl-hint" style="text-align:center">нажми на строку, чтобы найти цифру</div></div>`;
 }
-function scnPick(id, here) { if (!here) return; SCN.pick = SCN.pick === id ? null : id; render(); }
-function scnGo(d) { SCN.pick = null; SCN.idx = Math.max(0, SCN.idx + d); render(); window.scrollTo(0, 0); }
+/* карточки, на которых есть структуры шага: больше всего цифр — первой */
+function scnCardsFor(topic, ids) {
+  const n = im => im.hotspots.filter(h => ids.includes(h.term)).length;
+  return (topic.images || []).filter(im => n(im) > 0).sort((x, y) => n(y) - n(x));
+}
+function scnCard(src) { SCN.card = src; SCN.pick = null; render(); }
+function scnCardStep(d) {
+  const topic = findTopic(SCN.topicId), st = scenarioOf(SCN.topicId).steps[SCN.idx], cards = scnCardsFor(topic, st.h || []);
+  const cur = (SCN.card && cards.findIndex(c => c.src === SCN.card)); const i = cur >= 0 && SCN.card ? cur : 0;
+  const nx = cards[Math.max(0, Math.min(cards.length - 1, i + d))]; if (nx) scnCard(nx.src);
+}
+function scnPick(id, here) {
+  if (!here) { const topic = findTopic(SCN.topicId), im = (topic.images || []).find(x => x.hotspots.some(h => h.term === id)); if (!im) return; SCN.card = im.src; SCN.pick = id; render(); return; }
+  SCN.pick = SCN.pick === id ? null : id; render();
+}
+function scnGo(d) { SCN.card = null; SCN.pick = null; SCN.idx = Math.max(0, SCN.idx + d); render(); window.scrollTo(0, 0); }
 function scnMark(ok) {
   const sc = scenarioOf(SCN.topicId);
   (ok ? SCN.said : SCN.forgot).push(SCN.idx);
-  SCN.idx++; SCN.shown = false; SCN.pick = null; render(); window.scrollTo(0, 0);
+  SCN.idx++; SCN.shown = false; SCN.pick = null; SCN.card = null; render(); window.scrollTo(0, 0);
   if (SCN.idx >= sc.steps.length && !SCN.xp) { SCN.xp = 1; addXp(SCN.said.length * 2); }
 }
 function renderScenarioResult(topic, sc) {
