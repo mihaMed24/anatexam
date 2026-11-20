@@ -510,6 +510,8 @@ function renderMap() {
   SKELETON_GROUPS.forEach(grpNode);
   html += `</div><div class="section-block"><div class="section-title"><span class="icon">🔗</span><span>Суставы и связки <span class="new-badge">новое</span></span></div>`;
   ARTHRO_GROUPS.filter(g => !g.hidden).forEach(grpNode);
+  html += `</div><div class="section-block"><div class="section-title"><span class="icon">💪</span><span>Мышцы <span class="new-badge">новое</span></span></div>`;
+  MYO_GROUPS.filter(g => !g.hidden).forEach(grpNode);
   html += `</div></div><div class="mc-prog">`;
   html += programBlockHtml();
   html += `</div></div>`;
@@ -675,7 +677,11 @@ const ARTHRO_GROUPS = [
   { id: 'a_lower', title: 'Суставы нижней конечности', icon: '🦵', desc: 'таз, тазобедренный, коленный, голеностоп, стопа', sections: ['jlower'] },
   { id: 'a_all', title: 'Артрология целиком', icon: '🔗', desc: 'все соединения — для обзорного занятия', sections: ['jgeneral', 'jaxial', 'jupper', 'jlower'], hidden: true },
 ];
-const ALL_GROUPS = SKELETON_GROUPS.concat(ARTHRO_GROUPS);
+const MYO_GROUPS = [
+  { id: 'm_upper', title: 'Мышцы верхней конечности', icon: '💪', desc: 'плечевой пояс и плечо', sections: ['myupper'] },
+];
+const ALL_GROUPS = SKELETON_GROUPS.concat(ARTHRO_GROUPS, MYO_GROUPS);
+function isMuscleTopic(topicId) { return /^m_/.test(topicId || ''); }
 function isJointTopic(topicId) { return /^j_/.test(topicId || ''); }
 function groupTopics(g) {
   return g.sections.flatMap(id => (CONTENT.sections.find(s => s.id === id) || { topics: [] }).topics);
@@ -692,7 +698,7 @@ function topicStarTotal(topicId) {
 function topicNodeHtml(topic) {
   return `
     <div class="topic-node" onclick='APP.goToJSON(${JSON.stringify(JSON.stringify({screen:'hub', topicId: topic.id}))})'>
-      <div class="node-emoji">${isJointTopic(topic.id) ? '🔗' : '🦴'}</div>
+      <div class="node-emoji">${isJointTopic(topic.id) ? '🔗' : isMuscleTopic(topic.id) ? '💪' : '🦴'}</div>
       <div class="node-body">
         <div class="node-title">${topic.title}</div>
         <div class="node-latin">${topic.latin}</div>
@@ -759,7 +765,7 @@ function renderHub(topicId) {
         <div class="mode-emoji">📖</div>
         <div class="mode-body">
           <div class="mode-title">Справочник</div>
-          <div class="mode-desc">${isJointTopic(topicId) ? 'Всё о соединении: строение, форма, оси, связки, клиника' : 'Всё о кости кратко, как энциклопедическая статья'}</div>
+          <div class="mode-desc">${isJointTopic(topicId) ? 'Всё о соединении: строение, форма, оси, связки, клиника' : isMuscleTopic(topicId) ? 'Начало, прикрепление, функция и иннервация каждой мышцы — таблицей' : 'Всё о кости кратко, как энциклопедическая статья'}</div>
         </div>
       </div>
       ${AXJ.some(j => j.tp === topicId) ? `<div class="mode-card glossary-card" onclick="axStart('topic', ${JSON.stringify(AXJ.filter(j => j.tp === topicId).map(j => j.id)).replace(/"/g, "'")})">
@@ -3274,7 +3280,7 @@ const WeakSpotsGame = (function () {
   /* варианты из той же темы (при нехватке — из других), без повторов перевода */
   function optionTerms(topic, term, n, pool) {
     const seen = new Set([ruKey(term)]), out = [];
-    const cands = shuffleArr(pool || topic.terms).concat(shuffleArr(CONTENT.sections.flatMap(s => s.topics.flatMap(t => t.terms))));
+    const cands = shuffleArr(pool || topic.terms).concat(shuffleArr(CONTENT.sections.flatMap(s => s.topics.filter(t => isMuscleTopic(t.id) === isMuscleTopic(topic.id)).flatMap(t => t.terms))));
     for (const t of cands) {
       if (out.length >= n) break;
       if (t.id === term.id || seen.has(ruKey(t)) || t.lat === term.lat) continue;
@@ -4878,6 +4884,8 @@ Object.assign(SCENARIOS, {"j_general": {"src": "с. 134–136", "steps": [{"t": 
 let SCN = null;
 
 function scnIsLimb(topicId) { const s = CONTENT.sections.find(x => x.topics.some(t => t.id === topicId)); return !!s && (s.id === 'upperlimb' || s.id === 'lowerlimb'); }
+/* сценарии ответа по мышцам */
+Object.assign(SCENARIOS, {"m_shoulder": {"src": "с. 222–225", "steps": [{"t": "Мышцы плечевого пояса и плеча", "text": "Мышцы плечевого пояса — <b>шесть</b>: дельтовидная, надостная, подостная, малая и большая круглые, подлопаточная. На плече спереди — сгибатели (<b>двуглавая, клювовидно-плечевая, плечевая</b>), сзади — разгибатели (<b>трёхглавая и локтевая</b>). Для каждой мышцы называем: начало → прикрепление → функцию → иннервацию.", "h": ["musculus_deltoideus", "musculus_biceps_brachii", "musculus_triceps_brachii"]}, {"t": "Дельтовидная мышца — musculus deltoideus", "text": "<b>Начало:</b> латеральная треть ключицы, акромион, ость лопатки.<br><b>Прикрепление:</b> бугристость дельтовидная плечевой кости.<br><b>Функция:</b> передняя часть сгибает плечо, задняя разгибает, средняя (вся мышца) отводит руку до горизонтали.<br><b>Иннервация:</b> n. axillaris (CV–CVI).", "h": ["musculus_deltoideus", "acromion"]}, {"t": "Надостная мышца — musculus supraspinatus", "text": "<b>Начало:</b> надостная ямка лопатки.<br><b>Прикрепление:</b> верхняя часть большого бугорка плечевой кости.<br><b>Функция:</b> отводит плечо (синергист дельтовидной), натягивает капсулу сустава.<br><b>Иннервация:</b> n. suprascapularis (CV–CVI).", "h": ["musculus_supraspinatus"]}, {"t": "Подостная мышца — musculus infraspinatus", "text": "<b>Начало:</b> подостная ямка лопатки.<br><b>Прикрепление:</b> большой бугорок плечевой кости.<br><b>Функция:</b> вращает плечо кнаружи.<br><b>Иннервация:</b> n. suprascapularis (CV–CVI).", "h": ["musculus_infraspinatus"]}, {"t": "Малая круглая мышца — musculus teres minor", "text": "<b>Начало:</b> латеральный край лопатки.<br><b>Прикрепление:</b> большой бугорок плечевой кости, ниже сухожилия подостной.<br><b>Функция:</b> вращает плечо кнаружи (как подостная).<br><b>Иннервация:</b> n. axillaris (CV–CVI).", "h": ["musculus_teres_minor"]}, {"t": "Большая круглая мышца — musculus teres major", "text": "<b>Начало:</b> задняя поверхность нижнего угла лопатки.<br><b>Прикрепление:</b> гребень малого бугорка плечевой кости (вместе с широчайшей).<br><b>Функция:</b> тянет руку назад и вниз, приводит, вращает плечо внутрь.<br><b>Иннервация:</b> n. subscapularis (CV–CVII).", "h": ["musculus_teres_major"]}, {"t": "Подлопаточная мышца — musculus subscapularis", "text": "<b>Начало:</b> рёберная поверхность лопатки (вся).<br><b>Прикрепление:</b> малый бугорок плечевой кости.<br><b>Функция:</b> вращает плечо внутрь, натягивает капсулу сустава.<br><b>Иннервация:</b> n. subscapularis (CV–CVII).", "h": ["musculus_subscapularis"]}, {"t": "Отверстия на задней поверхности", "text": "<b>Трёхстороннее</b> отверстие: сверху — подлопаточная, снизу — большая круглая, латерально — длинная головка трёхглавой. <b>Четырёхстороннее</b>: те же сверху, снизу и медиально, а латерально — хирургическая шейка плечевой кости.", "h": ["foramen_trilaterum", "foramen_quadrilaterum"]}, {"t": "Широчайшая мышца спины — musculus latissimus dorsi", "text": "<b>Начало:</b> остистые отростки 4 (до 6) нижних грудных, всех поясничных и крестцовых позвонков, задняя часть гребня подвздошной кости, 4 нижних ребра.<br><b>Прикрепление:</b> гребень малого бугорка плечевой кости.<br><b>Функция:</b> разгибает и вращает плечо внутрь, приводит отведённую руку; при фиксированных руках подтягивает туловище.<br><b>Иннервация:</b> n. thoracodorsalis.", "h": ["musculus_latissimus_dorsi"]}, {"t": "Двуглавая мышца плеча — musculus biceps brachii", "text": "<b>Начало:</b> длинная головка — надсуставной бугорок лопатки (сухожилие идёт через сустав в межбугорковой борозде); короткая — клювовидный отросток.<br><b>Прикрепление:</b> бугристость лучевой кости; апоневроз уходит в фасцию предплечья.<br><b>Функция:</b> сгибает плечо и предплечье, supинирует пронированное предплечье.<br><b>Иннервация:</b> n. musculocutaneus (CV–CVII).", "h": ["musculus_biceps_brachii", "caput_longum_bicipitis", "caput_breve_bicipitis", "tendo_bicipitis", "aponeurosis_bicipitis", "fossa_cubitalis"]}, {"t": "Клювовидно-плечевая мышца — musculus coracobrachialis", "text": "<b>Начало:</b> клювовидный отросток лопатки.<br><b>Прикрепление:</b> медиальная поверхность плечевой кости ниже гребня малого бугорка.<br><b>Функция:</b> сгибает и приводит плечо.<br><b>Иннервация:</b> n. musculocutaneus (CV–CVII).", "h": ["musculus_coracobrachialis"]}, {"t": "Плечевая мышца — musculus brachialis", "text": "<b>Начало:</b> передняя поверхность плечевой кости и обе межмышечные перегородки.<br><b>Прикрепление:</b> бугристость локтевой кости.<br><b>Функция:</b> только сгибает предплечье.<br><b>Иннервация:</b> n. musculocutaneus (CV–CVII).", "h": ["musculus_brachialis"]}, {"t": "Трёхглавая мышца плеча — musculus triceps brachii", "text": "<b>Начало:</b> длинная головка — подсуставной бугорок лопатки; латеральная — задняя поверхность плеча выше борозды лучевого нерва; медиальная — ниже борозды.<br><b>Прикрепление:</b> локтевой отросток (olecranon).<br><b>Функция:</b> разгибает предплечье; длинная головка разгибает и приводит плечо.<br><b>Иннервация:</b> n. radialis (CV–CVIII).", "h": ["musculus_triceps_brachii", "caput_longum_tricipitis", "caput_laterale_tricipitis", "caput_mediale_tricipitis", "tendo_tricipitis", "olecranon"]}, {"t": "Локтевая мышца — musculus anconeus", "text": "<b>Начало:</b> латеральный надмыщелок плечевой кости и лучевая коллатеральная связка.<br><b>Прикрепление:</b> задняя поверхность локтевой кости (проксимальная четверть).<br><b>Функция:</b> разгибает предплечье (как трёхглавая).<br><b>Иннервация:</b> n. radialis (CVI–CVIII).", "h": ["musculus_anconeus"]}]}});
 function scenarioOf(topicId) { return (typeof SCENARIOS !== 'undefined' && SCENARIOS[topicId]) || null; }
 
 function scnStart(topicId, mode) {
@@ -4899,7 +4907,7 @@ function scnImageFor(topic, ids) {
 function renderScenarioIntro(topicId) {
   const topic = findTopic(topicId), sc = scenarioOf(topicId);
   let html = renderTopbar() + backRow(topic.title, { screen: 'hub', topicId });
-  html += `<div class="hub-header"><h1>🗣️ Сценарий ответа</h1><div class="hub-latin">${topic.title} — ${isJointTopic(topicId) ? (topicId === 'j_general' ? 'общий план ответа о соединениях' : 'как рассказать соединение: кости → форма → капсула → связки → движения') : 'как рассказать кость: ' + (scnIsLimb(topicId) ? 'от проксимального конца к дистальному' : 'название и положение, затем по частям')}, ${sc.steps.length} шагов</div></div>
+  html += `<div class="hub-header"><h1>🗣️ Сценарий ответа</h1><div class="hub-latin">${topic.title} — ${isJointTopic(topicId) ? (topicId === 'j_general' ? 'общий план ответа о соединениях' : 'как рассказать соединение: кости → форма → капсула → связки → движения') : isMuscleTopic(topicId) ? 'как рассказать мышцу: начало → прикрепление → функция → иннервация' : 'как рассказать кость: ' + (scnIsLimb(topicId) ? 'от проксимального конца к дистальному' : 'название и положение, затем по частям')}, ${sc.steps.length} шагов</div></div>
     <div class="mode-grid">
       <div class="mode-card" onclick="scnStart('${topicId}','read')"><div class="mode-emoji">📖</div>
         <div class="mode-body"><div class="mode-title">Смотреть</div><div class="mode-desc">Листай шаги как конспект ответа — на карточке подсвечивается, о чём речь</div></div></div>

@@ -68,5 +68,8 @@ CONTENT.crops = {
  "jt_card22": {"x": 18.8, "y": 17.9, "w": 55.1, "h": 67.5},
  "jt_card23": {"x": 9.9, "y": 23.2, "w": 78.0, "h": 57.3},
  "jt_card24": {"x": 10.7, "y": 18.0, "w": 75.3, "h": 67.1},
- "jt_card25": {"x": 22.7, "y": 18.0, "w": 49.0, "h": 66.7}
+ "jt_card25": {"x": 22.7, "y": 18.0, "w": 49.0, "h": 66.7},
+ "my_shoulder_lateral_card": {"x": 8, "y": 16, "w": 76, "h": 72},
+ "my_shoulder_posterior_card": {"x": 8, "y": 16, "w": 76, "h": 72},
+ "my_shoulder_anterior_card": {"x": 8, "y": 16, "w": 76, "h": 72}
 };
