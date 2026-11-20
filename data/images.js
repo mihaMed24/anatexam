@@ -69,5 +69,8 @@ const IMAGES = {
   "jt_card22": "img/jt_card22.webp",
   "jt_card23": "img/jt_card23.webp",
   "jt_card24": "img/jt_card24.webp",
-  "jt_card25": "img/jt_card25.webp"
+  "jt_card25": "img/jt_card25.webp",
+  "my_shoulder_lateral_card": "img/my_shoulder_lateral_card.webp",
+  "my_shoulder_posterior_card": "img/my_shoulder_posterior_card.webp",
+  "my_shoulder_anterior_card": "img/my_shoulder_anterior_card.webp"
 };
