@@ -77,5 +77,9 @@ CONTENT.crops = {
  "my_back_posteriorserratus_card": {"x": 28, "y": 32, "w": 30, "h": 56},
  "my_back_erector_card": {"x": 44, "y": 19, "w": 28, "h": 66},
  "my_back_deep_card": {"x": 19, "y": 23, "w": 60, "h": 56},
- "my_back_suboccipital_card": {"x": 5, "y": 19, "w": 85, "h": 62}
+ "my_back_suboccipital_card": {"x": 5, "y": 19, "w": 85, "h": 62},
+ "my_abd_front_card": {"x": 14, "y": 17, "w": 70, "h": 67},
+ "my_abd_lateral_card": {"x": 20, "y": 19, "w": 52, "h": 66},
+ "my_abd_deep_card": {"x": 17, "y": 19, "w": 68, "h": 64},
+ "my_abd_inner_card": {"x": 20, "y": 12, "w": 62, "h": 68}
 };

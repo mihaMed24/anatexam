@@ -1419,6 +1419,1104 @@ CONTENT.sections.push({
      ]
     }
    ]
+  },
+  {
+   "id": "m_abdomen",
+   "title": "Мышцы и фасции груди и живота; паховый канал",
+   "latin": "Musculi et fasciae pectoris et abdominis; canalis inguinalis",
+   "terms": [
+    {
+     "id": "musculus_pectoralis_major_pars_clavicularis",
+     "lat": "musculus pectoralis major (pars clavicularis)",
+     "ru": "большая грудная мышца (ключичная часть)",
+     "translit": "му́скулюс пэктора́лис ма́йор (парс клавикуля́рис)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "pectoralis",
+       "грудная"
+      ],
+      [
+       "major",
+       "большая"
+      ],
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "clavicularis",
+       "ключичная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_pectoralis_major_pars_sternocostalis",
+     "lat": "musculus pectoralis major (pars sternocostalis)",
+     "ru": "большая грудная мышца (грудино-рёберная часть)",
+     "translit": "му́скулюс пэктора́лис ма́йор (парс стернокоста́лис)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "pectoralis",
+       "грудная"
+      ],
+      [
+       "major",
+       "большая"
+      ],
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "sternocostalis",
+       "грудино-рёберная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_pectoralis_major_pars_abdominalis",
+     "lat": "musculus pectoralis major (pars abdominalis)",
+     "ru": "большая грудная мышца (брюшная часть)",
+     "translit": "му́скулюс пэктора́лис ма́йор (парс абдомина́лис)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "pectoralis",
+       "грудная"
+      ],
+      [
+       "major",
+       "большая"
+      ],
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "abdominalis",
+       "брюшная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_pectoralis_minor",
+     "lat": "musculus pectoralis minor",
+     "ru": "малая грудная мышца",
+     "translit": "му́скулюс пэктора́лис ми́нор",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "pectoralis",
+       "грудная"
+      ],
+      [
+       "minor",
+       "малая"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_subclavius",
+     "lat": "musculus subclavius",
+     "ru": "подключичная мышца",
+     "translit": "му́скулюс субкла́виус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "subclavius",
+       "подключичная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_serratus_anterior",
+     "lat": "musculus serratus anterior",
+     "ru": "передняя зубчатая мышца",
+     "translit": "му́скулюс сэрра́тус анте́риор",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "serratus",
+       "зубчатая"
+      ],
+      [
+       "anterior",
+       "передняя"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_latissimus_dorsi",
+     "lat": "musculus latissimus dorsi",
+     "ru": "широчайшая мышца спины",
+     "translit": "му́скулюс лати́ссимус до́рси",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "latissimus",
+       "широчайшая"
+      ],
+      [
+       "dorsi",
+       "спины"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_deltoideus",
+     "lat": "musculus deltoideus",
+     "ru": "дельтовидная мышца",
+     "translit": "му́скулюс дэльтоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "deltoideus",
+       "дельтовидная"
+      ]
+     ]
+    },
+    {
+     "id": "musculi_intercostales_externi",
+     "lat": "musculi intercostales externi",
+     "ru": "наружные межрёберные мышцы",
+     "translit": "му́скули интэркоста́лэс экстэ́рни",
+     "parts": [
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "intercostales",
+       "межрёберные"
+      ],
+      [
+       "externi",
+       "наружные"
+      ]
+     ]
+    },
+    {
+     "id": "musculi_intercostales_interni",
+     "lat": "musculi intercostales interni",
+     "ru": "внутренние межрёберные мышцы",
+     "translit": "му́скули интэркоста́лэс интэ́рни",
+     "parts": [
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "intercostales",
+       "межрёберные"
+      ],
+      [
+       "interni",
+       "внутренние"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_transversus_thoracis",
+     "lat": "musculus transversus thoracis",
+     "ru": "поперечная мышца груди",
+     "translit": "му́скулюс трансвэ́рсус тора́цис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "transversus",
+       "поперечная"
+      ],
+      [
+       "thoracis",
+       "груди"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_obliquus_externus_abdominis",
+     "lat": "musculus obliquus externus abdominis",
+     "ru": "наружная косая мышца живота",
+     "translit": "му́скулюс облику́ус экстэ́рнус абдо́минис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "obliquus",
+       "косая"
+      ],
+      [
+       "externus",
+       "наружная"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_obliquus_internus_abdominis",
+     "lat": "musculus obliquus internus abdominis",
+     "ru": "внутренняя косая мышца живота",
+     "translit": "му́скулюс облику́ус интэ́рнус абдо́минис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "obliquus",
+       "косая"
+      ],
+      [
+       "internus",
+       "внутренняя"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_transversus_abdominis",
+     "lat": "musculus transversus abdominis",
+     "ru": "поперечная мышца живота",
+     "translit": "му́скулюс трансвэ́рсус абдо́минис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "transversus",
+       "поперечная"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_rectus_abdominis",
+     "lat": "musculus rectus abdominis",
+     "ru": "прямая мышца живота",
+     "translit": "му́скулюс рэ́ктус абдо́минис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "rectus",
+       "прямая"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_pyramidalis",
+     "lat": "musculus pyramidalis",
+     "ru": "пирамидальная мышца",
+     "translit": "му́скулюс пирамида́лис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "pyramidalis",
+       "пирамидальная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_diaphragma_pars_costalis",
+     "lat": "musculus diaphragma (pars costalis)",
+     "ru": "диафрагма (рёберная часть)",
+     "translit": "му́скулюс диафра́гма (парс коста́лис)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "diaphragma",
+       "диафрагма"
+      ],
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "costalis",
+       "рёберная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_diaphragma_pars_sternalis",
+     "lat": "musculus diaphragma (pars sternalis)",
+     "ru": "диафрагма (грудинная часть)",
+     "translit": "му́скулюс диафра́гма (парс стерна́лис)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "diaphragma",
+       "диафрагма"
+      ],
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "sternalis",
+       "грудинная"
+      ]
+     ]
+    },
+    {
+     "id": "fascia_pectoralis",
+     "lat": "fascia pectoralis (lamina superficialis)",
+     "ru": "грудная фасция (поверхностная пластинка)",
+     "translit": "фа́сция пэктора́лис (ла́мина суперфициа́лис)",
+     "parts": [
+      [
+       "fascia",
+       "фасция"
+      ],
+      [
+       "pectoralis",
+       "грудная"
+      ],
+      [
+       "lamina",
+       "пластинка"
+      ],
+      [
+       "superficialis",
+       "поверхностная"
+      ]
+     ]
+    },
+    {
+     "id": "fascia_endothoracica",
+     "lat": "fascia endothoracica",
+     "ru": "внутригрудная фасция",
+     "translit": "фа́сция эндоторакика",
+     "parts": [
+      [
+       "fascia",
+       "фасция"
+      ],
+      [
+       "endothoracica",
+       "внутригрудная"
+      ]
+     ]
+    },
+    {
+     "id": "fascia_transversalis",
+     "lat": "fascia transversalis",
+     "ru": "поперечная фасция",
+     "translit": "фа́сция трансверса́лис",
+     "parts": [
+      [
+       "fascia",
+       "фасция"
+      ],
+      [
+       "transversalis",
+       "поперечная"
+      ]
+     ]
+    },
+    {
+     "id": "aponeurosis_obliqui_externi",
+     "lat": "aponeurosis musculi obliqui externi abdominis",
+     "ru": "апоневроз наружной косой мышцы живота",
+     "translit": "апонэвро́зис му́скули облику́и экстэ́рни абдо́минис",
+     "parts": [
+      [
+       "aponeurosis",
+       "апоневроз"
+      ],
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "obliqui",
+       "косой"
+      ],
+      [
+       "externi",
+       "наружной"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ]
+     ]
+    },
+    {
+     "id": "ligamentum_inguinale",
+     "lat": "ligamentum inguinale",
+     "ru": "паховая связка",
+     "translit": "лигаме́нтум ингвина́лэ",
+     "parts": [
+      [
+       "ligamentum",
+       "связка"
+      ],
+      [
+       "inguinale",
+       "паховая"
+      ]
+     ]
+    },
+    {
+     "id": "hiatus_saphenus",
+     "lat": "hiatus saphenus",
+     "ru": "подкожная щель",
+     "translit": "гиа́тус сафэ́нус",
+     "parts": [
+      [
+       "hiatus",
+       "щель"
+      ],
+      [
+       "saphenus",
+       "подкожная"
+      ]
+     ]
+    },
+    {
+     "id": "linea_alba",
+     "lat": "linea alba",
+     "ru": "белая линия живота",
+     "translit": "ли́нэа а́льба",
+     "parts": [
+      [
+       "linea",
+       "линия"
+      ],
+      [
+       "alba",
+       "белая"
+      ]
+     ]
+    },
+    {
+     "id": "anulus_umbilicalis",
+     "lat": "anulus umbilicalis",
+     "ru": "пупочное кольцо",
+     "translit": "а́нулус умбилика́лис",
+     "parts": [
+      [
+       "anulus",
+       "кольцо"
+      ],
+      [
+       "umbilicalis",
+       "пупочное"
+      ]
+     ]
+    },
+    {
+     "id": "adminiculum_lineae_albae",
+     "lat": "adminiculum lineae albae",
+     "ru": "подпора белой линии",
+     "translit": "админи́кулум ли́нэе а́льбэ",
+     "parts": [
+      [
+       "adminiculum",
+       "подпора"
+      ],
+      [
+       "lineae",
+       "линии"
+      ],
+      [
+       "albae",
+       "белой"
+      ]
+     ]
+    },
+    {
+     "id": "vagina_recti_lamina_anterior",
+     "lat": "vagina musculi recti abdominis (lamina anterior)",
+     "ru": "влагалище прямой мышцы живота (передняя пластинка)",
+     "translit": "вагина му́скули рэ́кти абдо́минис (ла́мина анте́риор)",
+     "parts": [
+      [
+       "vagina",
+       "влагалище"
+      ],
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "recti",
+       "прямой"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ],
+      [
+       "lamina",
+       "пластинка"
+      ],
+      [
+       "anterior",
+       "передняя"
+      ]
+     ]
+    },
+    {
+     "id": "vagina_recti_lamina_posterior",
+     "lat": "vagina musculi recti abdominis (lamina posterior)",
+     "ru": "влагалище прямой мышцы живота (задняя пластинка)",
+     "translit": "вагина му́скули рэ́кти абдо́минис (ла́мина постэ́риор)",
+     "parts": [
+      [
+       "vagina",
+       "влагалище"
+      ],
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "recti",
+       "прямой"
+      ],
+      [
+       "abdominis",
+       "живота"
+      ],
+      [
+       "lamina",
+       "пластинка"
+      ],
+      [
+       "posterior",
+       "задняя"
+      ]
+     ]
+    },
+    {
+     "id": "linea_arcuata",
+     "lat": "linea arcuata",
+     "ru": "дугообразная линия",
+     "translit": "ли́нэа аркуа́та",
+     "parts": [
+      [
+       "linea",
+       "линия"
+      ],
+      [
+       "arcuata",
+       "дугообразная"
+      ]
+     ]
+    },
+    {
+     "id": "anulus_inguinalis_profundus",
+     "lat": "anulus inguinalis profundus",
+     "ru": "глубокое паховое кольцо",
+     "translit": "а́нулус ингвина́лис профу́ндус",
+     "parts": [
+      [
+       "anulus",
+       "кольцо"
+      ],
+      [
+       "inguinalis",
+       "паховое"
+      ],
+      [
+       "profundus",
+       "глубокое"
+      ]
+     ]
+    },
+    {
+     "id": "funiculus_spermaticus",
+     "lat": "funiculus spermaticus",
+     "ru": "семенной канатик",
+     "translit": "фуни́кулус спермати́кус",
+     "parts": [
+      [
+       "funiculus",
+       "канатик"
+      ],
+      [
+       "spermaticus",
+       "семенной"
+      ]
+     ]
+    },
+    {
+     "id": "arcus_iliopectineus",
+     "lat": "arcus iliopectineus",
+     "ru": "подвздошно-гребенчатая дуга",
+     "translit": "а́ркус иллиопектине́ус",
+     "parts": [
+      [
+       "arcus",
+       "дуга"
+      ],
+      [
+       "iliopectineus",
+       "подвздошно-гребенчатая"
+      ]
+     ]
+    }
+   ],
+   "glossary": "<p><b>Мышцы груди</b> делятся на поверхностные (прикрепляются к костям плечевого пояса и плеча: большая и малая грудные, подключичная, передняя зубчатая) и глубокие, или собственные (аутохтонные): наружные и внутренние межрёберные, подрёберные и поперечная мышца груди. Диафрагма наравне с межрёберными мышцами участвует в дыхании.</p><p><b>Мышцы живота</b> образуют переднюю, боковые и заднюю стенки: боковые — три широких слоя (наружная косая, внутренняя косая, поперечная), передние — прямая и пирамидальная, задняя — квадратная мышца поясницы. Иннервация передних и боковых мышц — нижние межрёберные, подвздошно-подчревный и подвздошно-паховый нервы.</p><h2>Начало, прикрепление, функция, иннервация</h2><div style=\"overflow-x:auto\"><table class=\"gl-table\"><tr><th>Мышца</th><th>Начало</th><th>Прикрепление</th><th>Функция</th><th>Иннервация</th></tr><tr><td><b>Большая грудная мышца (ключичная часть)</b><br><i>musculus pectoralis major (pars clavicularis)</i></td><td>медиальная половина ключицы</td><td>crista tuberculi majoris плечевой кости</td><td>сгибает плечо; вместе с остальными частями приводит руку к туловищу и пронирует её</td><td>nn. pectorales medialis et lateralis</td></tr><tr><td><b>Большая грудная мышца (грудино-рёберная часть)</b><br><i>musculus pectoralis major (pars sternocostalis)</i></td><td>передняя поверхность грудины и хрящи II–VII рёбер</td><td>crista tuberculi majoris плечевой кости</td><td>приводит руку к туловищу и поворачивает её внутрь (пронирует); при фиксированных руках приподнимает рёбра с грудиной и содействует вдоху</td><td>nn. pectorales medialis et lateralis</td></tr><tr><td><b>Большая грудная мышца (брюшная часть)</b><br><i>musculus pectoralis major (pars abdominalis)</i></td><td>передняя стенка влагалища прямой мышцы живота</td><td>crista tuberculi majoris плечевой кости</td><td>приводит руку к туловищу и поворачивает её внутрь (пронирует); при фиксированных руках приподнимает рёбра с грудиной и содействует вдоху</td><td>nn. pectorales medialis et lateralis</td></tr><tr><td><b>Малая грудная мышца</b><br><i>musculus pectoralis minor</i></td><td>II–V рёбра (четыре зубца)</td><td>processus coracoideus лопатки</td><td>оттягивает лопатку вперёд и вниз; при фиксированных руках — мышца вдоха</td><td>nn. pectorales medialis et lateralis</td></tr><tr><td><b>Подключичная мышца</b><br><i>musculus subclavius</i></td><td>I ребро (мышца протягивается между ключицей и I ребром)</td><td>ключица</td><td>подкрепляет грудино-ключичное сочленение, оттягивая ключицу вниз и медиально</td><td>n. subclavius</td></tr><tr><td><b>Передняя зубчатая мышца</b><br><i>musculus serratus anterior</i></td><td>девять верхних рёбер (обычно девятью зубцами)</td><td>медиальный край лопатки</td><td>вместе с ромбовидной образует мышечную петлю, прижимающую лопатку к грудной клетке; оттягивает лопатку вперёд; нижний отдел поворачивает нижний угол лопатки вперёд и латерально (при подъёме руки выше горизонтали); при фиксированном поясе поднимает рёбра, способствуя вдоху</td><td>n. thoracicus longus</td></tr><tr><td><b>Наружные межрёберные мышцы</b><br><i>musculi intercostales externi</i></td><td>нижний край вышележащего ребра (волокна идут сверху вниз и сзади наперёд)</td><td>верхний край нижележащего ребра</td><td>поднимают рёбра и расширяют грудную клетку — мышцы спокойного вдоха</td><td>nn. intercostales</td></tr><tr><td><b>Внутренние межрёберные мышцы</b><br><i>musculi intercostales interni</i></td><td>верхний край нижележащего ребра (волокна идут вверх и вперёд)</td><td>вышележащее ребро</td><td>участвуют в выдохе (по мнению некоторых авторов — и в спокойном)</td><td>nn. intercostales</td></tr><tr><td><b>Наружная косая мышца живота</b><br><i>musculus obliquus externus abdominis</i></td><td>восемь нижних рёбер (восемью зубцами)</td><td>подвздошный гребень (задние пучки); остальные волокна переходят в апоневроз, идущий впереди прямой мышцы к белой линии</td><td>при одностороннем сокращении поворачивает туловище в противоположную сторону; при двустороннем — опускает рёбра и сгибает позвоночник</td><td>nn. intercostales (нижние), n. iliohypogastricus, n. ilioinguinalis</td></tr><tr><td><b>Внутренняя косая мышца живота</b><br><i>musculus obliquus internus abdominis</i></td><td>fascia thoracolumbalis, подвздошный гребень и латеральные две трети паховой связки</td><td>нижний край X–XII рёбер (задние пучки); передние пучки переходят в апоневроз, образующий влагалище прямой мышцы, и идут к белой линии</td><td>при одностороннем сокращении вместе с наружной косой противоположной стороны поворачивает туловище в свою сторону; при двустороннем — сгибает позвоночник</td><td>nn. intercostales (нижние), n. iliohypogastricus, n. ilioinguinalis</td></tr><tr><td><b>Поперечная мышца живота</b><br><i>musculus transversus abdominis</i></td><td>внутренняя поверхность шести нижних рёбер, глубокий листок fascia thoracolumbalis, подвздошный гребень и латеральные две трети паховой связки</td><td>апоневроз, идущий к linea alba (вверху позади, внизу впереди прямой мышцы)</td><td>при двустороннем сокращении уменьшает объём брюшной полости; главная составная часть брюшного пресса</td><td>nn. intercostales (нижние), n. iliohypogastricus, n. ilioinguinalis</td></tr><tr><td><b>Прямая мышца живота</b><br><i>musculus rectus abdominis</i></td><td>передняя поверхность хрящей V–VII рёбер и мечевидный отросток</td><td>лобковая кость между симфизом и tuberculum pubicum</td><td>опускает грудную клетку и сгибает позвоночник</td><td>nn. intercostales (нижние), n. iliohypogastricus, n. ilioinguinalis</td></tr><tr><td><b>Пирамидальная мышца</b><br><i>musculus pyramidalis</i></td><td>над лобковым симфизом (под передней стенкой влагалища прямой мышцы)</td><td>белая линия живота</td><td>натягивает белую линию живота</td><td>nn. intercostales (нижние), n. iliohypogastricus, n. ilioinguinalis</td></tr></table></div><h2>Фасции груди и треугольники позади грудных мышц</h2><ul><li><b>Поверхностная фасция груди</b> лежит на большой грудной и передней зубчатой мышцах. <b>Глубокая фасция</b> образует влагалище для малой грудной и подключичной мышц и прилежит к наружным межрёберным. Внутреннюю поверхность стенок покрывает <b>внутригрудная фасция</b> (fascia endothoracica), переходящая на диафрагму.</li><li><b>Ключично-грудной треугольник</b> — между ключицей и верхним краем малой грудной мышцы. <b>Грудной треугольник</b> — по очертаниям малой грудной мышцы. <b>Подгрудной треугольник</b> — между нижними краями малой и большой грудных мышц.</li></ul><h2>Фасции живота</h2><ul><li><b>Поверхностная фасция</b> выражена в нижней половине живота; состоит из двух пластинок (между ними — подкожные вены живота).</li><li><b>Собственная фасция</b> — три листка: поверхностный покрывает наружную косую мышцу и срастается с её апоневрозом (образует межножковые волокна; в области поверхностного кольца одевает m. cremaster и семенной канатик как fascia cremasterica); средний делится на две пластинки, покрывающие внутреннюю косую мышцу; глубокий — <b>поперечная фасция</b> (fascia transversalis) на задней поверхности поперечной мышцы.</li><li><b>Внутрибрюшная фасция</b> (fascia endoabdominalis) выстилает брюшную полость; её значительная часть — поперечная фасция.</li></ul><h2>Влагалище прямой мышцы живота</h2><ul><li><b>Выше линии между передневерхними подвздошными остями</b> (примерно на 4–5 см ниже пупка проходит linea arcuata): апоневроз внутренней косой расщепляется; передняя пластинка вместе с апоневрозом наружной косой образует переднюю стенку влагалища, задняя пластинка срастается с апоневрозом поперечной и образует заднюю стенку.</li><li><b>Ниже дугообразной линии</b> апоневрозы всех трёх мышц идут впереди прямой мышцы; сзади её покрывает только поперечная фасция.</li></ul><h2>Белая линия живота</h2><p>Фиброзная пластинка от мечевидного отростка до лобкового симфиза, образованная сращением апоневрозов широких мышц обеих сторон. Почти посередине — пупочное кольцо (anulus umbilicalis). Содержит только тонкие сосуды, поэтому через неё проводят чревосечение.</p><h2>Паховый канал (canalis inguinalis)</h2><ul><li>Щель над паховой связкой длиной около 4,5 см; идёт сверху вниз и сзади наперёд. Содержимое: у мужчин семенной канатик, у женщин — круглая связка матки.</li><li><b>Стенки:</b> передняя — апоневроз наружной косой мышцы; задняя — поперечная фасция (и брюшина); верхняя — нижний край внутренней косой и поперечной мышц; нижняя — паховая связка.</li><li><b>Кольца:</b> поверхностное (anulus inguinalis superficialis) — в апоневрозе наружной косой между латеральной и медиальной ножками, над верхней ветвью лобковой кости; глубокое (anulus inguinalis profundus) — в поперечной фасции над серединой паховой связки, соответствует латеральной паховой ямке.</li><li><b>Паховые ямки</b> на задней стороне передней брюшной стенки: латеральная (против глубокого кольца) и медиальная (против поверхностного кольца — слабое место задней стенки). Здесь образуются паховые грыжи.</li><li>Мышца, поднимающая яичко (m. cremaster), отходит от нижних краёв внутренней косой и поперечной мышц.</li></ul><h2>Квадратная мышца поясницы</h2><p>Задняя стенка живота; от подвздошного гребня и lig. iliolumbale к XII ребру и поперечным отросткам I–IV поясничных позвонков. Наклоняет позвоночник в сторону, оттягивает XII ребро вниз (Привес, с. 206).</p><p class=\"age-src\">Привес, «Анатомия человека», с. 198–209; фасции, треугольники и паховый канал — также по текстам карточек Сапина «Миология» №7–10. Иннервация — только нервы (сегменты спинного мозга не проверялись). Поперечная мышца груди, диафрагма и подрёберные мышцы даны как термины карточек, без таблицы фактов.</p>",
+   "images": [
+    {
+     "id": "my_abd_front",
+     "label": "Мышцы и фасции груди и живота, вид спереди (7)",
+     "src": "my_abd_front_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "fascia_pectoralis",
+       "x": 69.0,
+       "y": 31.0,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "aponeurosis_obliqui_externi",
+       "x": 71.6,
+       "y": 66.4,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "hiatus_saphenus",
+       "x": 35.4,
+       "y": 74.7,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "ligamentum_inguinale",
+       "x": 36.2,
+       "y": 70.1,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "linea_alba",
+       "x": 36.9,
+       "y": 66.7,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "musculus_obliquus_externus_abdominis",
+       "x": 37.0,
+       "y": 62.6,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "musculus_serratus_anterior",
+       "x": 36.4,
+       "y": 52.6,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "musculus_latissimus_dorsi",
+       "x": 35.9,
+       "y": 50.7,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "musculus_pectoralis_major_pars_abdominalis",
+       "x": 21.5,
+       "y": 40.9,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "musculus_pectoralis_major_pars_sternocostalis",
+       "x": 23.0,
+       "y": 38.7,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "musculus_pectoralis_major_pars_clavicularis",
+       "x": 25.9,
+       "y": 35.7,
+       "r": 4.0,
+       "n": "11"
+      },
+      {
+       "term": "musculus_deltoideus",
+       "x": 28.5,
+       "y": 34.4,
+       "r": 4.0,
+       "n": "12"
+      }
+     ]
+    },
+    {
+     "id": "my_abd_lateral",
+     "label": "Мышцы груди и живота, вид сбоку (8)",
+     "src": "my_abd_lateral_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "musculus_serratus_anterior",
+       "x": 58.7,
+       "y": 33.1,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "musculi_intercostales_interni",
+       "x": 67.7,
+       "y": 43.2,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "musculi_intercostales_externi",
+       "x": 69.3,
+       "y": 48.7,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "musculus_obliquus_internus_abdominis",
+       "x": 66.7,
+       "y": 63.6,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "musculus_latissimus_dorsi",
+       "x": 35.4,
+       "y": 52.5,
+       "r": 4.0,
+       "n": "5"
+      }
+     ]
+    },
+    {
+     "id": "my_abd_deep",
+     "label": "Малая грудная мышца и другие мышцы груди и живота, вид спереди (9)",
+     "src": "my_abd_deep_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "musculi_intercostales_externi",
+       "x": 73.9,
+       "y": 32.8,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "musculi_intercostales_interni",
+       "x": 76.7,
+       "y": 42.8,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "musculus_rectus_abdominis",
+       "x": 75.1,
+       "y": 47.1,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "linea_alba",
+       "x": 75.2,
+       "y": 53.8,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "vagina_recti_lamina_posterior",
+       "x": 73.9,
+       "y": 56.1,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "vagina_recti_lamina_anterior",
+       "x": 75.1,
+       "y": 60.6,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "musculus_transversus_abdominis",
+       "x": 76.6,
+       "y": 63.9,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "ligamentum_inguinale",
+       "x": 78.0,
+       "y": 66.3,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "funiculus_spermaticus",
+       "x": 78.0,
+       "y": 70.1,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "musculus_pyramidalis",
+       "x": 79.3,
+       "y": 74.9,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "fascia_transversalis",
+       "x": 34.3,
+       "y": 64.0,
+       "r": 4.0,
+       "n": "11"
+      },
+      {
+       "term": "linea_arcuata",
+       "x": 37.0,
+       "y": 61.4,
+       "r": 4.0,
+       "n": "12"
+      },
+      {
+       "term": "musculus_serratus_anterior",
+       "x": 22.0,
+       "y": 47.8,
+       "r": 4.0,
+       "n": "13"
+      },
+      {
+       "term": "musculus_pectoralis_minor",
+       "x": 29.2,
+       "y": 26.3,
+       "r": 4.0,
+       "n": "14"
+      },
+      {
+       "term": "musculus_subclavius",
+       "x": 33.8,
+       "y": 24.8,
+       "r": 4.0,
+       "n": "15"
+      }
+     ]
+    },
+    {
+     "id": "my_abd_inner",
+     "label": "Мышцы передней стенки груди и живота, вид сзади (10)",
+     "src": "my_abd_inner_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "musculi_intercostales_interni",
+       "x": 71.6,
+       "y": 30.1,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "musculus_transversus_thoracis",
+       "x": 73.3,
+       "y": 39.8,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "fascia_transversalis",
+       "x": 71.8,
+       "y": 53.7,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "anulus_umbilicalis",
+       "x": 72.8,
+       "y": 60.3,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "linea_arcuata",
+       "x": 72.8,
+       "y": 61.8,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "linea_alba",
+       "x": 72.8,
+       "y": 63.2,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "anulus_inguinalis_profundus",
+       "x": 70.0,
+       "y": 67.1,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "funiculus_spermaticus",
+       "x": 68.7,
+       "y": 70.2,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "adminiculum_lineae_albae",
+       "x": 67.7,
+       "y": 75.5,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "arcus_iliopectineus",
+       "x": 31.1,
+       "y": 74.5,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "ligamentum_inguinale",
+       "x": 30.5,
+       "y": 68.6,
+       "r": 4.0,
+       "n": "11"
+      },
+      {
+       "term": "musculus_rectus_abdominis",
+       "x": 28.9,
+       "y": 66.3,
+       "r": 4.0,
+       "n": "12"
+      },
+      {
+       "term": "musculus_transversus_abdominis",
+       "x": 26.2,
+       "y": 63.7,
+       "r": 4.0,
+       "n": "13"
+      },
+      {
+       "term": "musculus_transversus_abdominis",
+       "x": 28.2,
+       "y": 54.8,
+       "r": 4.0,
+       "n": "13"
+      },
+      {
+       "term": "musculus_obliquus_externus_abdominis",
+       "x": 27.0,
+       "y": 61.6,
+       "r": 4.0,
+       "n": "14"
+      },
+      {
+       "term": "musculus_obliquus_internus_abdominis",
+       "x": 27.9,
+       "y": 57.7,
+       "r": 4.0,
+       "n": "15"
+      },
+      {
+       "term": "vagina_recti_lamina_posterior",
+       "x": 27.9,
+       "y": 52.4,
+       "r": 4.0,
+       "n": "16"
+      },
+      {
+       "term": "musculus_diaphragma_pars_costalis",
+       "x": 27.9,
+       "y": 48.7,
+       "r": 4.0,
+       "n": "17"
+      },
+      {
+       "term": "musculus_diaphragma_pars_sternalis",
+       "x": 25.6,
+       "y": 41.1,
+       "r": 4.0,
+       "n": "18"
+      },
+      {
+       "term": "fascia_endothoracica",
+       "x": 30.5,
+       "y": 26.4,
+       "r": 4.0,
+       "n": "19"
+      }
+     ]
+    }
+   ]
   }
  ]
 });
