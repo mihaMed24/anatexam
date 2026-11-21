@@ -2517,6 +2517,854 @@ CONTENT.sections.push({
      ]
     }
    ]
+  },
+  {
+   "id": "m_neck",
+   "title": "Мышцы и фасции шеи; топография шеи",
+   "latin": "Musculi et fasciae colli; topographia colli",
+   "terms": [
+    {
+     "id": "musculus_sternocleidomastoideus",
+     "lat": "musculus sternocleidomastoideus",
+     "ru": "грудино-ключично-сосцевидная мышца",
+     "translit": "му́скулюс стэрноклэйдомастоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "sternocleidomastoideus",
+       "грудино-ключично-сосцевидная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_trapezius",
+     "lat": "musculus trapezius",
+     "ru": "трапециевидная мышца",
+     "translit": "му́скулюс трапе́циус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "trapezius",
+       "трапециевидная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_levator_scapulae",
+     "lat": "musculus levator scapulae",
+     "ru": "мышца, поднимающая лопатку",
+     "translit": "му́скулюс лэва́тор ска́пулэ",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "levator",
+       "поднимающая"
+      ],
+      [
+       "scapulae",
+       "лопатку"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_mylohyoideus",
+     "lat": "musculus mylohyoideus",
+     "ru": "челюстно-подъязычная мышца",
+     "translit": "му́скулюс милогиоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "mylohyoideus",
+       "челюстно-подъязычная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_digastricus_venter_anterior",
+     "lat": "musculus digastricus (venter anterior)",
+     "ru": "двубрюшная мышца (переднее брюшко)",
+     "translit": "му́скулюс дигастрикус (вэ́нтэр анте́риор)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "digastricus",
+       "двубрюшная"
+      ],
+      [
+       "venter",
+       "брюшко"
+      ],
+      [
+       "anterior",
+       "переднее"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_digastricus_venter_posterior",
+     "lat": "musculus digastricus (venter posterior)",
+     "ru": "двубрюшная мышца (заднее брюшко)",
+     "translit": "му́скулюс дига́стрикус (вэ́нтэр постэ́риор)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "digastricus",
+       "двубрюшная"
+      ],
+      [
+       "venter",
+       "брюшко"
+      ],
+      [
+       "posterior",
+       "заднее"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_stylohyoideus",
+     "lat": "musculus stylohyoideus",
+     "ru": "шилоподъязычная мышца",
+     "translit": "му́скулюс стилогиоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "stylohyoideus",
+       "шилоподъязычная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_hyoglossus",
+     "lat": "musculus hyoglossus",
+     "ru": "подъязычно-язычная мышца",
+     "translit": "му́скулюс гиогло́ссус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "hyoglossus",
+       "подъязычно-язычная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_thyrohyoideus",
+     "lat": "musculus thyrohyoideus",
+     "ru": "щитоподъязычная мышца",
+     "translit": "му́скулюс тиреогиоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "thyrohyoideus",
+       "щитоподъязычная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_sternohyoideus",
+     "lat": "musculus sternohyoideus",
+     "ru": "грудино-подъязычная мышца",
+     "translit": "му́скулюс стэрногиоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "sternohyoideus",
+       "грудино-подъязычная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_sternothyroideus",
+     "lat": "musculus sternothyroideus",
+     "ru": "грудино-щитовидная мышца",
+     "translit": "му́скулюс стэрнотиреоиде́ус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "sternothyroideus",
+       "грудино-щитовидная"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_omohyoideus_venter_superior",
+     "lat": "musculus omohyoideus (venter superior)",
+     "ru": "лопаточно-подъязычная мышца (верхнее брюшко)",
+     "translit": "му́скулюс омогиоиде́ус (вэ́нтэр супэ́риор)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "omohyoideus",
+       "лопаточно-подъязычная"
+      ],
+      [
+       "venter",
+       "брюшко"
+      ],
+      [
+       "superior",
+       "верхнее"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_omohyoideus_venter_inferior",
+     "lat": "musculus omohyoideus (venter inferior)",
+     "ru": "лопаточно-подъязычная мышца (нижнее брюшко)",
+     "translit": "му́скулюс омогиоиде́ус (вэ́нтэр инфэ́риор)",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "omohyoideus",
+       "лопаточно-подъязычная"
+      ],
+      [
+       "venter",
+       "брюшко"
+      ],
+      [
+       "inferior",
+       "нижнее"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_scalenus_anterior",
+     "lat": "musculus scalenus anterior",
+     "ru": "передняя лестничная мышца",
+     "translit": "му́скулюс скале́нус анте́риор",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "scalenus",
+       "лестничная"
+      ],
+      [
+       "anterior",
+       "передняя"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_scalenus_medius",
+     "lat": "musculus scalenus medius",
+     "ru": "средняя лестничная мышца",
+     "translit": "му́скулюс скале́нус ме́диус",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "scalenus",
+       "лестничная"
+      ],
+      [
+       "medius",
+       "средняя"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_scalenus_posterior",
+     "lat": "musculus scalenus posterior",
+     "ru": "задняя лестничная мышца",
+     "translit": "му́скулюс скале́нус постэ́риор",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "scalenus",
+       "лестничная"
+      ],
+      [
+       "posterior",
+       "задняя"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_longus_colli",
+     "lat": "musculus longus colli",
+     "ru": "длинная мышца шеи",
+     "translit": "му́скулюс ло́нгус ко́лли",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "longus",
+       "длинная"
+      ],
+      [
+       "colli",
+       "шеи"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_longus_capitis",
+     "lat": "musculus longus capitis",
+     "ru": "длинная мышца головы",
+     "translit": "му́скулюс ло́нгус ка́питис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "longus",
+       "длинная"
+      ],
+      [
+       "capitis",
+       "головы"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_rectus_capitis_anterior",
+     "lat": "musculus rectus capitis anterior",
+     "ru": "передняя прямая мышца головы",
+     "translit": "му́скулюс рэ́ктус ка́питис анте́риор",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "rectus",
+       "прямая"
+      ],
+      [
+       "capitis",
+       "головы"
+      ],
+      [
+       "anterior",
+       "передняя"
+      ]
+     ]
+    },
+    {
+     "id": "musculus_rectus_capitis_lateralis",
+     "lat": "musculus rectus capitis lateralis",
+     "ru": "латеральная прямая мышца головы",
+     "translit": "му́скулюс рэ́ктус ка́питис латэра́лис",
+     "parts": [
+      [
+       "musculus",
+       "мышца"
+      ],
+      [
+       "rectus",
+       "прямая"
+      ],
+      [
+       "capitis",
+       "головы"
+      ],
+      [
+       "lateralis",
+       "латеральная"
+      ]
+     ]
+    },
+    {
+     "id": "glandula_parotis",
+     "lat": "glandula parotis",
+     "ru": "околоушная железа",
+     "translit": "гла́ндула паро́тис",
+     "parts": [
+      [
+       "glandula",
+       "железа"
+      ],
+      [
+       "parotis",
+       "околоушная"
+      ]
+     ]
+    },
+    {
+     "id": "tendo_musculi_digastrici",
+     "lat": "tendo musculi digastrici",
+     "ru": "сухожилие двубрюшной мышцы",
+     "translit": "тэ́ндо му́скули дига́стрици",
+     "parts": [
+      [
+       "tendo",
+       "сухожилие"
+      ],
+      [
+       "musculi",
+       "мышцы"
+      ],
+      [
+       "digastrici",
+       "двубрюшной"
+      ]
+     ]
+    },
+    {
+     "id": "os_hyoideum",
+     "lat": "os hyoideum",
+     "ru": "подъязычная кость",
+     "translit": "ос гиоиде́ум",
+     "parts": [
+      [
+       "os",
+       "кость"
+      ],
+      [
+       "hyoideum",
+       "подъязычная"
+      ]
+     ]
+    },
+    {
+     "id": "intersectio_tendinea",
+     "lat": "intersectio tendinea",
+     "ru": "сухожильная перемычка",
+     "translit": "интэрсэ́кцио тэндине́а",
+     "parts": [
+      [
+       "intersectio",
+       "перемычка"
+      ],
+      [
+       "tendinea",
+       "сухожильная"
+      ]
+     ]
+    },
+    {
+     "id": "processus_transversus_atlantis",
+     "lat": "processus transversus atlantis",
+     "ru": "поперечный отросток атланта",
+     "translit": "про́цэссус трансвэ́рсус атла́нтис",
+     "parts": [
+      [
+       "processus",
+       "отросток"
+      ],
+      [
+       "transversus",
+       "поперечный"
+      ],
+      [
+       "atlantis",
+       "атланта"
+      ]
+     ]
+    },
+    {
+     "id": "vertebra_thoracica_iii",
+     "lat": "vertebra thoracica III",
+     "ru": "третий грудной позвонок",
+     "translit": "вэ́ртэбра тора́цика тэ́рция",
+     "parts": [
+      [
+       "vertebra",
+       "позвонок"
+      ],
+      [
+       "thoracica",
+       "грудной"
+      ],
+      [
+       "III",
+       "третий"
+      ]
+     ]
+    },
+    {
+     "id": "pars_basilaris",
+     "lat": "pars basilaris (os occipitale)",
+     "ru": "базилярная часть (затылочной кости)",
+     "translit": "парс базиля́рис",
+     "parts": [
+      [
+       "pars",
+       "часть"
+      ],
+      [
+       "basilaris",
+       "базилярная"
+      ],
+      [
+       "os",
+       "кость"
+      ],
+      [
+       "occipitale",
+       "затылочная"
+      ]
+     ]
+    }
+   ],
+   "glossary": "<p>Мышцы шеи — разного происхождения. <b>Дериваты жаберных дуг:</b> I дуга — челюстно-подъязычная и переднее брюшко двубрюшной (n. trigeminus); II дуга — шилоподъязычная, заднее брюшко двубрюшной и подкожная мышца шеи (n. facialis); остальные дуги — грудино-ключично-сосцевидная (n. accessorius и шейное сплетение). <b>Аутохтонные:</b> подподъязычные (грудино-подъязычная, грудино-щитовидная, щитоподъязычная, лопаточно-подъязычная) и подбородочно-подъязычная — ansa cervicalis; лестничные и предпозвоночные — шейное сплетение.</p><p>По положению: <b>поверхностные</b> (platysma, грудино-ключично-сосцевидная); <b>средние</b>, или мышцы подъязычной кости (надподъязычные и подподъязычные); <b>глубокие</b> — боковые (лестничные) и предпозвоночные.</p><h2>Начало, прикрепление, функция, иннервация</h2><div style=\"overflow-x:auto\"><table class=\"gl-table\"><tr><th>Мышца</th><th>Начало</th><th>Прикрепление</th><th>Функция</th><th>Иннервация</th></tr><tr><td><b>Грудино-ключично-сосцевидная мышца</b><br><i>musculus sternocleidomastoideus</i></td><td>рукоятка грудины и грудинный конец ключицы</td><td>сосцевидный отросток и linea nuchae superior затылочной кости</td><td>односторонне наклоняет шейный отдел в свою сторону и поднимает голову, поворачивая лицо в противоположную сторону; двусторонне удерживает голову вертикально; при фиксированной голове поднимает грудную клетку (вспомогательная мышца вдоха)</td><td>n. accessorius (XI) и шейное сплетение</td></tr><tr><td><b>Челюстно-подъязычная мышца</b><br><i>musculus mylohyoideus</i></td><td>linea mylohyoidea нижней челюсти</td><td>сухожильный шов (raphe) и тело подъязычной кости</td><td>поднимает подъязычную кость; при фиксированной кости опускает нижнюю челюсть; обе мышцы образуют диафрагму рта, при глотании поднимают язык</td><td>n. trigeminus (V)</td></tr><tr><td><b>Двубрюшная мышца (переднее брюшко)</b><br><i>musculus digastricus (venter anterior)</i></td><td>fossa digastrica нижней челюсти</td><td>промежуточное сухожилие (оно прикрепляется к телу и большому рогу подъязычной кости)</td><td>поднимает подъязычную кость; при фиксированной кости опускает нижнюю челюсть</td><td>n. trigeminus (V)</td></tr><tr><td><b>Двубрюшная мышца (заднее брюшко)</b><br><i>musculus digastricus (venter posterior)</i></td><td>incisura mastoidea височной кости</td><td>промежуточное сухожилие (оно прикрепляется к телу и большому рогу подъязычной кости)</td><td>поднимает подъязычную кость; при фиксированной кости опускает нижнюю челюсть</td><td>n. facialis (VII)</td></tr><tr><td><b>Шилоподъязычная мышца</b><br><i>musculus stylohyoideus</i></td><td>processus styloideus височной кости</td><td>тело подъязычной кости (охватывает двумя пучками промежуточное сухожилие двубрюшной мышцы)</td><td>поднимает подъязычную кость</td><td>n. facialis (VII)</td></tr><tr><td><b>Грудино-подъязычная мышца</b><br><i>musculus sternohyoideus</i></td><td>задняя поверхность рукоятки грудины, грудино-ключичное сочленение и грудинный конец ключицы</td><td>нижний край подъязычной кости</td><td>тянет подъязычную кость вниз</td><td>ansa cervicalis (C1–C3)</td></tr><tr><td><b>Грудино-щитовидная мышца</b><br><i>musculus sternothyroideus</i></td><td>задняя поверхность рукоятки грудины и хрящ I ребра</td><td>linea obliqua щитовидного хряща</td><td>опускает гортань</td><td>ansa cervicalis (C1–C3)</td></tr><tr><td><b>Щитоподъязычная мышца</b><br><i>musculus thyrohyoideus</i></td><td>linea obliqua щитовидного хряща</td><td>тело и большой рог подъязычной кости</td><td>при фиксированной подъязычной кости тянет гортань кверху</td><td>ansa cervicalis (C1–C3)</td></tr><tr><td><b>Лопаточно-подъязычная мышца (нижнее брюшко)</b><br><i>musculus omohyoideus (venter inferior)</i></td><td>лопатка медиальнее incisura scapulae</td><td>промежуточное сухожилие под грудино-ключично-сосцевидной мышцей (переходит в верхнее брюшко)</td><td>лежит в толще шейной фасции и натягивает её, содействуя расширению крупных вен; оттягивает подъязычную кость книзу</td><td>ansa cervicalis (C1–C3)</td></tr><tr><td><b>Лопаточно-подъязычная мышца (верхнее брюшко)</b><br><i>musculus omohyoideus (venter superior)</i></td><td>промежуточное сухожилие (от нижнего брюшка)</td><td>тело подъязычной кости</td><td>лежит в толще шейной фасции и натягивает её, содействуя расширению крупных вен; оттягивает подъязычную кость книзу</td><td>ansa cervicalis (C1–C3)</td></tr><tr><td><b>Передняя лестничная мышца</b><br><i>musculus scalenus anterior</i></td><td>передние бугорки поперечных отростков III–VI шейных позвонков</td><td>tuberculum m. scaleni anterioris I ребра (впереди sulcus a. subclaviae)</td><td>поднимают верхние рёбра (мышцы вдоха); при фиксированных рёбрах двусторонне сгибают шейный отдел вперёд, односторонне — сгибают и поворачивают его в свою сторону</td><td>rr. musculares plexus cervicalis</td></tr><tr><td><b>Средняя лестничная мышца</b><br><i>musculus scalenus medius</i></td><td>передние бугорки поперечных отростков всех шейных позвонков</td><td>I ребро (кзади от sulcus a. subclaviae)</td><td>поднимают верхние рёбра (мышцы вдоха); при фиксированных рёбрах двусторонне сгибают шейный отдел вперёд, односторонне — сгибают и поворачивают его в свою сторону</td><td>rr. musculares plexus cervicalis</td></tr><tr><td><b>Задняя лестничная мышца</b><br><i>musculus scalenus posterior</i></td><td>задние бугорки поперечных отростков трёх нижних шейных позвонков</td><td>наружная поверхность II ребра</td><td>поднимают верхние рёбра (мышцы вдоха); при фиксированных рёбрах двусторонне сгибают шейный отдел вперёд, односторонне — сгибают и поворачивают его в свою сторону</td><td>rr. musculares plexus cervicalis</td></tr><tr><td><b>Длинная мышца головы</b><br><i>musculus longus capitis</i></td><td>поперечные отростки III–VI шейных позвонков</td><td>pars basilaris затылочной кости</td><td>наклоняет голову вперёд</td><td>rr. musculares plexus cervicalis</td></tr><tr><td><b>Передняя прямая мышца головы</b><br><i>musculus rectus capitis anterior</i></td><td>латеральная масса атланта</td><td>затылочная кость</td><td>наклоняет голову вперёд</td><td>rr. musculares plexus cervicalis</td></tr><tr><td><b>Латеральная прямая мышца головы</b><br><i>musculus rectus capitis lateralis</i></td><td>поперечный отросток атланта</td><td>затылочная кость</td><td>наклоняет голову в свою сторону</td><td>rr. musculares plexus cervicalis</td></tr></table></div><h2>Области шеи</h2><ul><li><b>Задняя область</b> (regio cervicalis posterior, затылок, или выя) — позади наружного края трапециевидной мышцы.</li><li><b>Боковая область</b> (trigonum colli laterale) — позади грудино-ключично-сосцевидной мышцы; спереди её ограничивает эта мышца, снизу — ключица, сзади — трапециевидная.</li><li><b>Область грудино-ключично-сосцевидной мышцы</b> — проекция самой мышцы.</li><li><b>Передняя область</b> — кпереди от этой мышцы; сзади её ограничивает эта мышца, спереди — срединная линия, сверху — край нижней челюсти. Небольшая <b>занижнечелюстная ямка</b> (fossa retromandibularis) лежит позади угла нижней челюсти и впереди сосцевидного отростка (задний отдел околоушной железы, нервы и сосуды).</li></ul><h2>Треугольники шеи</h2><p>Лопаточно-подъязычная мышца, косо пересекающая грудино-ключично-сосцевидную, делит области на треугольники.</p><ul><li><b>Боковая область:</b><br>• <b>лопаточно-ключичный</b> (trigonum omoclaviculare) — сзади грудино-ключично-сосцевидная, сверху нижнее брюшко лопаточно-подъязычной, снизу ключица;<br>• <b>лопаточно-трапециевидный</b> (trigonum omotrapezoideum) — нижнее брюшко лопаточно-подъязычной, трапециевидная и грудино-ключично-сосцевидная.</li><li><b>Передняя область:</b><br>• <b>сонный</b> (trigonum caroticum) — сзади грудино-ключично-сосцевидная, сверху заднее брюшко двубрюшной, снизу верхнее брюшко лопаточно-подъязычной; здесь проекция сонной артерии;<br>• <b>поднижнечелюстной</b> (trigonum submandibulare) — нижний край нижней челюсти и два брюшка двубрюшной мышцы; в нём лежит поднижнечелюстная железа; внутри выделяют <b>треугольник Пирогова</b> (задний край челюстно-подъязычной, заднее брюшко двубрюшной, n. hypoglossus; проходит a. lingualis);<br>• <b>лопаточно-трахеальный</b> (trigonum omotracheale) — верхнее брюшко лопаточно-подъязычной, срединная линия шеи и грудино-ключично-сосцевидная;<br>• <b>подбородочный</b> (по тексту карточки Сапина №13) — между срединной линией, подъязычной костью и передним брюшком двубрюшной мышцы.</li></ul><h2>Щели между лестничными мышцами</h2><ul><li><b>Межлестничное пространство</b> (spatium interscalenum) — между передней и средней лестничными, снизу I ребро; проходят подключичная артерия и плечевое сплетение.</li><li><b>Предлестничное пространство</b> (spatium antescalenum) — впереди передней лестничной, спереди прикрыто грудино-щитовидной и грудино-подъязычной мышцами; проходят подключичная вена, a. suprascapularis и m. omohyoideus.</li></ul><h2>Фасции шеи (по В.Н. Шевкуненко)</h2><ol><li><b>Fascia colli superficialis</b> — поверхностная фасция шеи; содержит platysma.</li><li><b>Lamina superficialis fasciae colli propriae</b> — поверхностный листок собственной фасции: «воротник» шеи; влагалища для грудино-ключично-сосцевидной и трапециевидной мышц; по средней линии срастается с глубоким листком, образуя белую линию шеи.</li><li><b>Lamina profunda fasciae colli propriae</b> — глубокий листок: между подъязычной костью, обеими лопаточно-подъязычными мышцами, ключицами и грудиной; влагалища для мышц ниже подъязычной кости; «шейный парус» (aponeurosis omoclavicularis). Между листками — надгрудинное межапоневротическое пространство (spatium suprasternale) с яремной венозной дугой.</li><li><b>Fascia endocervicalis</b> — внутренняя фасция шеи: висцеральный листок образует капсулы органов, париетальный — общее влагалище и влагалище сосудисто-нервного пучка (a. carotis communis, v. jugularis interna, n. vagus). Впереди органов — spatium previscerale (в том числе претрахеальное).</li><li><b>Fascia prevertebralis</b> — предпозвоночная фасция: влагалища для предпозвоночных и лестничных мышц; продолжается в заднее средостение. Между 4-й и 5-й фасциями — позадивисцеральное (позадиглоточное) пространство.</li></ol><p class=\"age-src\">Привес, «Анатомия человека», с. 209–217; треугольники — также по обороту карточки Сапина №13, названия мышц — по легендам карточек №13–15. Длинная мышца шеи, подкожная мышца шеи, подбородочно-подъязычная и подъязычно-язычная мышцы даны без таблицы фактов (начало и прикрепление у Привеса не описаны полностью).</p>",
+   "images": [
+    {
+     "id": "my_neck_superficial",
+     "label": "Поверхностные и глубокие мышцы шеи, вид сбоку справа (13)",
+     "src": "my_neck_superficial_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "glandula_parotis",
+       "x": 50.7,
+       "y": 20.2,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "tendo_musculi_digastrici",
+       "x": 64.8,
+       "y": 23.1,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "musculus_mylohyoideus",
+       "x": 68.5,
+       "y": 24.6,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "musculus_digastricus_venter_anterior",
+       "x": 73.0,
+       "y": 26.4,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "os_hyoideum",
+       "x": 73.1,
+       "y": 44.1,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "musculus_thyrohyoideus",
+       "x": 72.3,
+       "y": 46.2,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "musculus_omohyoideus_venter_superior",
+       "x": 72.3,
+       "y": 50.6,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "musculus_sternohyoideus",
+       "x": 71.1,
+       "y": 53.1,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "musculus_sternocleidomastoideus",
+       "x": 70.2,
+       "y": 55.7,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "musculus_trapezius",
+       "x": 27.4,
+       "y": 60.5,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "musculus_omohyoideus_venter_inferior",
+       "x": 30.5,
+       "y": 57.8,
+       "r": 4.0,
+       "n": "11"
+      },
+      {
+       "term": "musculus_hyoglossus",
+       "x": 24.1,
+       "y": 41.0,
+       "r": 4.0,
+       "n": "12"
+      },
+      {
+       "term": "musculus_digastricus_venter_posterior",
+       "x": 22.3,
+       "y": 38.4,
+       "r": 4.0,
+       "n": "13"
+      },
+      {
+       "term": "musculus_stylohyoideus",
+       "x": 21.8,
+       "y": 36.1,
+       "r": 4.0,
+       "n": "14"
+      }
+     ]
+    },
+    {
+     "id": "my_neck_hyoid",
+     "label": "Надподъязычные и подподъязычные мышцы шеи, вид сбоку справа (14)",
+     "src": "my_neck_hyoid_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "musculus_hyoglossus",
+       "x": 56.6,
+       "y": 19.3,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "musculus_mylohyoideus",
+       "x": 73.6,
+       "y": 21.6,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "musculus_digastricus_venter_anterior",
+       "x": 77.0,
+       "y": 24.5,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "os_hyoideum",
+       "x": 72.5,
+       "y": 40.5,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "musculus_thyrohyoideus",
+       "x": 72.1,
+       "y": 43.9,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "musculus_omohyoideus_venter_superior",
+       "x": 71.6,
+       "y": 48.9,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "musculus_sternohyoideus",
+       "x": 71.6,
+       "y": 50.8,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "musculus_sternothyroideus",
+       "x": 71.1,
+       "y": 53.0,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "intersectio_tendinea",
+       "x": 70.2,
+       "y": 56.8,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "musculus_scalenus_anterior",
+       "x": 51.8,
+       "y": 82.3,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "musculus_scalenus_medius",
+       "x": 46.6,
+       "y": 83.3,
+       "r": 4.0,
+       "n": "11"
+      },
+      {
+       "term": "musculus_scalenus_posterior",
+       "x": 40.0,
+       "y": 84.7,
+       "r": 4.0,
+       "n": "12"
+      },
+      {
+       "term": "musculus_omohyoideus_venter_inferior",
+       "x": 30.5,
+       "y": 58.7,
+       "r": 4.0,
+       "n": "13"
+      },
+      {
+       "term": "musculus_sternocleidomastoideus",
+       "x": 24.6,
+       "y": 26.4,
+       "r": 4.0,
+       "n": "14"
+      },
+      {
+       "term": "musculus_digastricus_venter_posterior",
+       "x": 33.3,
+       "y": 22.6,
+       "r": 4.0,
+       "n": "15"
+      },
+      {
+       "term": "musculus_stylohyoideus",
+       "x": 37.4,
+       "y": 21.1,
+       "r": 4.0,
+       "n": "16"
+      }
+     ]
+    },
+    {
+     "id": "my_neck_deep",
+     "label": "Глубокие мышцы шеи, вид спереди (15)",
+     "src": "my_neck_deep_card",
+     "w": 610,
+     "h": 870,
+     "hotspots": [
+      {
+       "term": "musculus_rectus_capitis_anterior",
+       "x": 55.1,
+       "y": 21.4,
+       "r": 4.0,
+       "n": "1"
+      },
+      {
+       "term": "musculus_rectus_capitis_lateralis",
+       "x": 64.3,
+       "y": 23.9,
+       "r": 4.0,
+       "n": "2"
+      },
+      {
+       "term": "processus_transversus_atlantis",
+       "x": 65.6,
+       "y": 36.7,
+       "r": 4.0,
+       "n": "3"
+      },
+      {
+       "term": "musculus_longus_colli",
+       "x": 71.0,
+       "y": 57.2,
+       "r": 4.0,
+       "n": "4"
+      },
+      {
+       "term": "vertebra_thoracica_iii",
+       "x": 50.0,
+       "y": 79.5,
+       "r": 4.0,
+       "n": "5"
+      },
+      {
+       "term": "musculus_scalenus_posterior",
+       "x": 25.6,
+       "y": 62.4,
+       "r": 4.0,
+       "n": "6"
+      },
+      {
+       "term": "musculus_scalenus_medius",
+       "x": 26.7,
+       "y": 58.2,
+       "r": 4.0,
+       "n": "7"
+      },
+      {
+       "term": "musculus_scalenus_anterior",
+       "x": 29.7,
+       "y": 54.8,
+       "r": 4.0,
+       "n": "8"
+      },
+      {
+       "term": "musculus_levator_scapulae",
+       "x": 30.3,
+       "y": 46.3,
+       "r": 4.0,
+       "n": "9"
+      },
+      {
+       "term": "musculus_longus_capitis",
+       "x": 32.8,
+       "y": 38.6,
+       "r": 4.0,
+       "n": "10"
+      },
+      {
+       "term": "pars_basilaris",
+       "x": 42.3,
+       "y": 21.6,
+       "r": 4.0,
+       "n": "11"
+      }
+     ]
+    }
+   ]
   }
  ]
 });

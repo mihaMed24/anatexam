@@ -81,5 +81,8 @@ CONTENT.crops = {
  "my_abd_front_card": {"x": 14, "y": 17, "w": 70, "h": 67},
  "my_abd_lateral_card": {"x": 20, "y": 19, "w": 52, "h": 66},
  "my_abd_deep_card": {"x": 17, "y": 19, "w": 68, "h": 64},
- "my_abd_inner_card": {"x": 20, "y": 12, "w": 62, "h": 68}
+ "my_abd_inner_card": {"x": 20, "y": 12, "w": 62, "h": 68},
+ "my_neck_superficial_card": {"x": 18, "y": 18, "w": 68, "h": 58},
+ "my_neck_hyoid_card": {"x": 10, "y": 17, "w": 78, "h": 70},
+ "my_neck_deep_card": {"x": 18, "y": 17, "w": 64, "h": 67}
 };

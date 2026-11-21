@@ -82,5 +82,8 @@ const IMAGES = {
   "my_abd_front_card": "img/my_abd_front_card.webp",
   "my_abd_lateral_card": "img/my_abd_lateral_card.webp",
   "my_abd_deep_card": "img/my_abd_deep_card.webp",
-  "my_abd_inner_card": "img/my_abd_inner_card.webp"
+  "my_abd_inner_card": "img/my_abd_inner_card.webp",
+  "my_neck_superficial_card": "img/my_neck_superficial_card.webp",
+  "my_neck_hyoid_card": "img/my_neck_hyoid_card.webp",
+  "my_neck_deep_card": "img/my_neck_deep_card.webp"
 };
