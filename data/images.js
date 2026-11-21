@@ -72,5 +72,11 @@ const IMAGES = {
   "jt_card25": "img/jt_card25.webp",
   "my_shoulder_lateral_card": "img/my_shoulder_lateral_card.webp",
   "my_shoulder_posterior_card": "img/my_shoulder_posterior_card.webp",
-  "my_shoulder_anterior_card": "img/my_shoulder_anterior_card.webp"
+  "my_shoulder_anterior_card": "img/my_shoulder_anterior_card.webp",
+  "my_back_superficial1_card": "img/my_back_superficial1_card.webp",
+  "my_back_superficial2_card": "img/my_back_superficial2_card.webp",
+  "my_back_posteriorserratus_card": "img/my_back_posteriorserratus_card.webp",
+  "my_back_erector_card": "img/my_back_erector_card.webp",
+  "my_back_deep_card": "img/my_back_deep_card.webp",
+  "my_back_suboccipital_card": "img/my_back_suboccipital_card.webp"
 };
