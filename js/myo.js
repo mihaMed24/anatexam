@@ -1,6 +1,8 @@
 /* ===================== МЫШЦЫ В ДЕЙСТВИИ ===================== */
 /* Упражнение для мышечных тем: кто делает движение · что выпадет при повреждении нерва · мышца по описанию.
    Вопросы собираются из таблицы фактов MYO_FACTS (data/myo_facts.js); после ответа — разбор с источником. */
+/* факты и сценарии мышц туловища и шеи (генерируются из tools/specs) */
+if (typeof MYO_TRUNK !== 'undefined') { Object.assign(MYO_FACTS, MYO_TRUNK.facts); Object.assign(SCENARIOS, MYO_TRUNK.scn); }
 const MA_KEY = 'anatoQuestMyoAct_v1';
 let MA = null, MA_TOPIC = null, MA_MODE = 'mix', MA_DIFF = 'medium';
 const MA_MODES = {
@@ -49,12 +51,12 @@ function maGenNerve(excl) {
   const ids = Object.keys(F.nerves).filter(n => Object.values(F.muscles).some(x => x.n === n) && !excl.has('nerve:' + n));
   const nid = (ids.length ? ids : Object.keys(F.nerves))[Math.floor(Math.random() * (ids.length || Object.keys(F.nerves).length))];
   excl.add('nerve:' + nid);
-  const n = F.nerves[nid], ok = Object.keys(F.muscles).filter(id => F.muscles[id].n === nid);
+  const n = F.nerves[nid], all = Object.keys(F.muscles).filter(id => F.muscles[id].n === nid), ok = all.length > 3 ? maPickN(all, 3) : all;
   const bad = maPickN(Object.keys(F.muscles).filter(id => F.muscles[id].n !== nid), ok.length > 1 ? Math.max(3, 6 - ok.length) : 3);
   return { type: 'nerve', kind: ok.length > 1 ? 'multi' : 'single', head: `Повреждён ${n.lat}`, subHead: n.ru,
     sub: ok.length > 1 ? 'Какие мышцы перестанут работать?' : 'Какая мышца перестанет работать?',
     opts: shuffleArr(ok.concat(bad).map(maMOpt)), ok, focus: ok, tags: true, mus: ok.slice(0, 3),
-    src: F.muscles[ok[0]].src, fb: `<b>${n.lat}</b> (${n.ru}) иннервирует: ${maLinks(ok)}.` };
+    src: F.muscles[ok[0]].src, fb: `<b>${n.lat}</b> (${n.ru}) иннервирует: ${maLinks(all)}.` };
 }
 function maLossMoves() {
   const F = maF(), out = [];
@@ -69,20 +71,24 @@ function maGenLoss() {
     opts: shuffleArr([m].concat(bad).map(x => ({ id: x.id, label: x.t }))), ok: [m.id], focus: m.m, mus: m.m, src: m.src,
     fb: `Все мышцы, которые выполняют это движение (${maLinks(m.m)}), получают ветви ${n.lat}. В остальных движениях участвует хотя бы одна мышца с другим нервом.` };
 }
-function maNeighbors(id) {
-  const F = maF(), nv = F.muscles[id].n;
-  const near = Object.keys(F.muscles).filter(x => x !== id && (F.muscles[x].n === nv || F.moves.some(m => m.m.includes(id) && m.m.includes(x))));
-  const rest = Object.keys(F.muscles).filter(x => x !== id && !near.includes(x));
+function maNeighbors(id, keys) {
+  const F = maF(), nv = F.muscles[id].n, t = F.muscles[id];
+  /* мышцы, у которых показанные подсказки совпадают с целевой, в варианты не берём (иначе ответов было бы два) */
+  const twin = x => keys.every(k => F.muscles[x][k] === t[k]);
+  const pool = Object.keys(F.muscles).filter(x => x !== id && !twin(x));
+  const near = pool.filter(x => F.muscles[x].n === nv || F.moves.some(m => m.m.includes(id) && m.m.includes(x)));
+  const rest = pool.filter(x => !near.includes(x));
   return shuffleArr(near).concat(shuffleArr(rest)).slice(0, 3);
 }
 function maGenDesc(id) {
   const f = maF().muscles[id];
-  let parts = [['Начало', f.o], ['Прикрепление', f.i], ['Функция', f.f]];
+  let parts = [['Начало', f.o, 'o'], ['Прикрепление', f.i, 'i'], ['Функция', f.f, 'f']];
   if (MA_DIFF === 'hard') parts = Math.random() < .5 ? [parts[0], parts[1]] : [parts[0], parts[2]];
-  if (MA_DIFF === 'easy') parts.push(['Иннервация', maNerve(f.n).lat]);
+  const keys = parts.map(p => p[2]);
+  if (MA_DIFF === 'easy') parts.push(['Иннервация', maNerve(f.n).lat, 'n']);
   return { type: 'desc', kind: 'single', head: '', sub: 'Какая это мышца?',
     desc: parts.map(p => `<b>${p[0]}:</b> ${p[1]}.`).join('<br>'),
-    opts: shuffleArr([id].concat(maNeighbors(id)).map(maMOpt)), ok: [id], focus: [id], tags: true, mus: [id], src: f.src,
+    opts: shuffleArr([id].concat(maNeighbors(id, keys)).map(maMOpt)), ok: [id], focus: [id], tags: true, mus: [id], src: f.src,
     fb: `Это <b>${maTerm(id).ru}</b> (${maTerm(id).lat}).` };
 }
 function maGenNerve2(id) {

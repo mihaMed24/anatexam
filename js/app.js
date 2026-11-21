@@ -679,6 +679,7 @@ const ARTHRO_GROUPS = [
 ];
 const MYO_GROUPS = [
   { id: 'm_upper', title: 'Мышцы верхней конечности', icon: '💪', desc: 'плечевой пояс и плечо', sections: ['myupper'] },
+  { id: 'm_trunk', title: 'Мышцы туловища и шеи', icon: '🏋️', desc: 'спина, живот, паховый канал, шея', sections: ['mytrunk'] },
 ];
 const ALL_GROUPS = SKELETON_GROUPS.concat(ARTHRO_GROUPS, MYO_GROUPS);
 function isMuscleTopic(topicId) { return /^m_/.test(topicId || ''); }
@@ -786,7 +787,7 @@ function renderHub(topicId) {
         <div class="mode-emoji">🗣️</div>
         <div class="mode-body">
           <div class="mode-title">Сценарий ответа <span class="new-badge">новое</span></div>
-          <div class="mode-desc">${isJointTopic(topicId) ? 'Как рассказать соединение по шагам: кости, форма, капсула, связки, движения' : 'Как рассказать кость по шагам — по Привесу'}</div>
+          <div class="mode-desc">${isJointTopic(topicId) ? 'Как рассказать соединение по шагам: кости, форма, капсула, связки, движения' : isMuscleTopic(topicId) ? 'Как рассказать мышцы по шагам: начало, прикрепление, функция, иннервация' : 'Как рассказать кость по шагам — по Привесу'}</div>
         </div>
       </div>` : ''}
     </div></div>`;

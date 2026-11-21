@@ -71,5 +71,11 @@ CONTENT.crops = {
  "jt_card25": {"x": 22.7, "y": 18.0, "w": 49.0, "h": 66.7},
  "my_shoulder_lateral_card": {"x": 8, "y": 16, "w": 76, "h": 72},
  "my_shoulder_posterior_card": {"x": 8, "y": 16, "w": 76, "h": 72},
- "my_shoulder_anterior_card": {"x": 8, "y": 16, "w": 76, "h": 72}
+ "my_shoulder_anterior_card": {"x": 8, "y": 16, "w": 76, "h": 72},
+ "my_back_superficial1_card": {"x": 18, "y": 18, "w": 68, "h": 64},
+ "my_back_superficial2_card": {"x": 40, "y": 18, "w": 36, "h": 68},
+ "my_back_posteriorserratus_card": {"x": 28, "y": 32, "w": 30, "h": 56},
+ "my_back_erector_card": {"x": 44, "y": 19, "w": 28, "h": 66},
+ "my_back_deep_card": {"x": 19, "y": 23, "w": 60, "h": 56},
+ "my_back_suboccipital_card": {"x": 5, "y": 19, "w": 85, "h": 62}
 };
