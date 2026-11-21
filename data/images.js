@@ -78,5 +78,9 @@ const IMAGES = {
   "my_back_posteriorserratus_card": "img/my_back_posteriorserratus_card.webp",
   "my_back_erector_card": "img/my_back_erector_card.webp",
   "my_back_deep_card": "img/my_back_deep_card.webp",
-  "my_back_suboccipital_card": "img/my_back_suboccipital_card.webp"
+  "my_back_suboccipital_card": "img/my_back_suboccipital_card.webp",
+  "my_abd_front_card": "img/my_abd_front_card.webp",
+  "my_abd_lateral_card": "img/my_abd_lateral_card.webp",
+  "my_abd_deep_card": "img/my_abd_deep_card.webp",
+  "my_abd_inner_card": "img/my_abd_inner_card.webp"
 };
